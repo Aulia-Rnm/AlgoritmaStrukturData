@@ -17,16 +17,16 @@ public class PersegiPanjang {
         Scanner uul = new Scanner(System.in);
         PersegiPanjang[] ppArray = new PersegiPanjang[3];
         for(int i=0;i<3;i++){
-            ppArray[0]=new PersegiPanjang();
+            ppArray[i]=new PersegiPanjang();
             System.out.println("Persegi panjang ke-"+i);
             System.out.print("Masukkan panjang: ");
-            ppArray[0].panjang=uul.nextInt();
+            ppArray[i].panjang=uul.nextInt();
             System.out.print("Masukkan lebar: ");
-            ppArray[0].lebar=uul.nextInt();
+            ppArray[i].lebar=uul.nextInt();
         }
         for(int i=0;i<3;i++){
             System.out.println("Persegi Panjang ke-"+i);
-            System.out.println("Panjang: "+ppArray[0].panjang+", lebar: "+ppArray[0].lebar);
+            System.out.println("Panjang: "+ppArray[i].panjang+", lebar: "+ppArray[i].lebar);
         }
     }
 }

@@ -9,10 +9,11 @@
  * @author Asus
  */
 public class Barang {
-    String namaBarang, jenisBarang;
+    String namaBarang, jenisBarang, garansi;
     int stok, hargaSatuan;
     
-    Barang(){
+    Barang(String old){
+        garansi=old;
         
     }
     Barang(String nm, String jn, int st,int hs){
@@ -28,6 +29,11 @@ public class Barang {
         System.out.println("Stok = "+stok);
         System.out.println("Harga Satuan = "+hargaSatuan);
     }
+    
+    void garansiBarang(){
+        System.out.println("Garansi = "+garansi);
+    }
+    
     void tambahStok(int n){
         stok = stok+n;
     }

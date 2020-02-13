@@ -10,7 +10,7 @@
  */
 public class BarangMain {
     public static void main(String[] args) {
-        Barang b1=new Barang();
+        Barang b1=new Barang("");
         b1.namaBarang = "Corsair 2 GB";
         b1.jenisBarang = "DDR";
         b1.hargaSatuan = 250000;
@@ -22,5 +22,7 @@ public class BarangMain {
         System.out.println("Harga 4 buah = "+hargaTotal);
         Barang b2 = new Barang("Logitech", "Wireless Mouse", 150000, 25);
         b2.tampilBarang();
+        Barang b3 = new Barang("2 tahun");
+        b3.garansiBarang();
     }
 }
