@@ -62,5 +62,20 @@ public class DaftarMahasiswaBerprestasi {
             }
             listMhs[j]=temp;
         }
-    }    
+    }
+    void insertionSort(Boolean ascending){
+        int i,j;
+        for(i=1;i<listMhs.length;i++){
+            Mahasiswa temp=new Mahasiswa();
+            temp = listMhs[1];
+            j=1;
+            if(ascending){
+                
+            }
+            else {
+                
+            }
+            listMhs[j]=temp;
+        }
+    }
 }
