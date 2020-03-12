@@ -14,8 +14,7 @@ public class minMaxMain {
         minMax[] ppArray=new minMax[5];
         ppArray[0]=new minMax();
         Scanner uul = new Scanner(System.in);
-        
-        
+                
         for(int i=0;i<5;i++){
             ppArray[i]=new minMax();
             System.out.println("Nilai array index ke-"+i);

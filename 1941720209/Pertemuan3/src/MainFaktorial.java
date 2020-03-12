@@ -43,6 +43,5 @@ public class MainFaktorial {
         elapsedTime=(endTime-startTime)/1000;
         System.out.println("Waktu eksekusi: "+String.valueOf(elapsedTime)+" detik");
         System.out.println("===============================================");
-    }
-    
+    }    
 }
