@@ -8,13 +8,19 @@
  *
  * @author Asus
  */
+import java.util.Scanner;
 public class StackMain {
+    static Scanner uul=new Scanner(System.in);
     public static void main(String[] args) {
-        Stack tumpukan=new Stack(4);
-        tumpukan.push(15);
-        tumpukan.push(31);
-        tumpukan.push(9);
-        tumpukan.push(12);
+        System.out.println("Masukkan jumlah data: ");
+        int input=uul.nextInt();
+        int j[]={input};
+        Stack tumpukan=new Stack(input);
+        for(int i=0;i<input;i++){
+            System.out.println("Masukkan angka ke-"+(i+1)+": ");
+            int angka=uul.nextInt();
+            tumpukan.push(angka);
+        }
         tumpukan.print();
         tumpukan.pop();
         tumpukan.peek();
