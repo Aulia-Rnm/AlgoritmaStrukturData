@@ -37,7 +37,7 @@ public class Queue {
     }
     public void peek(){
         if(!isEmpty()){
-            System.out.print("Elemen Terdepan: "+q[front]);
+            System.out.println("Elemen Terdepan: "+q[front]);
         }else{
             System.out.println("Antrian masih kosong");
         }
