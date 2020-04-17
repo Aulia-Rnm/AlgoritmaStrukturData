@@ -22,7 +22,7 @@ public class MainLinkedList {
         System.out.println("3. Cari");
         System.out.println("4. Keluar");
         System.out.println("-----------------");
-        System.out.println("Pilihan: ");
+        System.out.print("Pilihan: ");
         Pil=uul.nextInt();
         switch(Pil){
             case 1:
