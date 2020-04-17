@@ -32,9 +32,9 @@ public class LinkedList {
             for(int i=1;i<index;i++){
                 tmp=tmp.next;
             }
-            Node next=(tmp==null)?null:tmp.next;
+            Node next=(tmp==null) ? null : tmp.next;
             tmp.next=new Node(item,next);
-        }size++;
+        }
     }
     public void addLast(int item){
         if(isEmpty()){
@@ -45,7 +45,8 @@ public class LinkedList {
                 tmp=tmp.next;
             }
             tmp.next=new Node(item,null);
-        }size++;
+            size++;
+        }
     }
     public int getFirst() throws Exception{
         if(isEmpty()){
@@ -77,9 +78,11 @@ public class LinkedList {
             Node prev=head;
             Node cur=head.next;
             for(int i=1;i<index;i++){
-            prev=cur;
-            cur=prev.next;
-            }size--;
+                prev=cur;
+                cur=prev.next;
+            } 
+            prev.next=cur.next;
+            size--;
         }
     }
     public void removeFirst()throws Exception{
@@ -99,6 +102,18 @@ public class LinkedList {
             }System.out.println();
         }else{
             System.out.println("LinkedList kosong");
+        }
+    }
+    public void addByValue(int index,int item, int cur)throws Exception{
+        if(cur==item){
+            add(item,index);
+        }
+    }
+    public void removeByValue(int index,int item,int cur)throws Exception{
+        if(cur==item){
+            remove(index);
+        }else{
+            System.out.println("Nilai null");
         }
     }
 }
